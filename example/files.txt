@@ -1,0 +1,3 @@
+abundances	plugins/CSV2Dot/example/abundN.csv
+correlations	plugins/CSV2Dot/example/corrP.csv
+clusters	plugins/CSV2Dot/example/corrP.clusters.csv

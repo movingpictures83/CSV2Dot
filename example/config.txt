@@ -1,0 +1,2 @@
+Prefix plugins/CSV2Dot/example/
+Plugin CSV2Dot inputfile files.txt outputfile corrP.dot
