@@ -2,7 +2,7 @@
 # Language: Python
 # Input: TXT (contains list of CSV files)
 # Output: Dot (input file for Dot)
-# Tested with: PluMA 1.0, Python 2.7
+# Tested with: PluMA 1.0, Python 3.6
 
 PluMA plugin to take a network represented by multiple CSV files
 and visualize using the Dot format.

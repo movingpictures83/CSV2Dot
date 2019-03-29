@@ -10,16 +10,16 @@ class CSV2DotPlugin:
       for line in filestuff:
          keyval = line.split('\t')
          networkdata[keyval[0]] = keyval[1].strip()
-      if (not networkdata.has_key('correlations')):
+      if (not ('correlations' in networkdata)):
          PyPluMA.log("Error in CSV2DotPlugin, no correlations file defined")
          sys.exit(1)
       else:
          self.correlations = open(networkdata['correlations'], 'r')
-      if (networkdata.has_key('abundances')):
+      if ('abundances' in networkdata):
          self.abundances = open(networkdata['abundances'], 'r')
       else:
          self.abundances = None
-      if (networkdata.has_key('clusters')):
+      if ('clusters' in networkdata):
          self.clusters = open(networkdata['clusters'], 'r')
       else:
          self.clusters = None
@@ -38,7 +38,7 @@ class CSV2DotPlugin:
       i = 0
       for line in self.correlations:
          contents = line.split(',')
-	 self.ADJ.append([])
+         self.ADJ.append([])
          for j in range(self.n):
             value = float(contents[j+1])
             if (i != j and value != 0):
